@@ -1,0 +1,151 @@
+*{
+    padding: 7px;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    padding: 20px;
+    background-color: #F3EEEA;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.2);
+    align-items: center;
+    display: flex;
+}
+.log img{
+    max-width: 30%;
+
+
+}
+.nav-menu ul{
+    display: flex;
+    margin-left: 95px;
+}
+.nav-menu li{
+    margin-right: 15px;
+    list-style-type: none;
+    font-size: 1.1rem; 
+}
+a{
+    text-decoration: none;
+}
+.nav-menu li:last-child{
+    margin-right: 0;
+
+}
+body{
+    background-color: #EBE3D5;
+
+    font-family: Instrument Sans, sans-serif;
+}
+.nav-menu li :hover{
+    color:  #FABC3F;
+    transition: all ease 0.2s;
+}
+header {
+   
+    overflow: hidden;
+
+
+}
+.hero{
+    position: relative;
+    height: 100vh; /* This makes the hero section full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -5px;
+}
+
+
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover; /* This makes the image cover the entire container */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    max-width: 80%; /* Limits the width of the content for better readability */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FABC3F;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #e5a82e;
+}
+.destinations{
+    font-size: 2.4rem;
+    font-family: "Dongle-bold";
+    margin-bottom: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.destination-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.destination-item img{
+    width: 100%;
+    height: 400px;
+}
+
+/* Optional: Add a semi-transparent overlay to improve text readability */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(28, 26, 26, 0.3); 
+   
+}
+body::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: darkgrey;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
