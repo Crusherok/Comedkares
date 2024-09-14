@@ -6,25 +6,47 @@
 header{
     display: flex;
     padding: 20px;
-    background-color: #F3EEEA;
+    background-color: whitesmoke;
     box-shadow: 0 0 10px rgba(0,0,0, 0.2);
     align-items: center;
     display: flex;
 }
 .log img{
     max-width: 30%;
-
-
+    background-color: rgba(74, 44, 44, 0.3); 
 }
 .nav-menu ul{
     display: flex;
     margin-left: 95px;
 }
+
+.nav-menu ul{
+    display: flex;
+    margin-left: 95px;
+
+}
 .nav-menu li{
     margin-right: 15px;
     list-style-type: none;
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
+    display: flex; 
+    align-items: center;
+
 }
+.nav-menu li a {
+    display: flex;
+    align-items: center;
+}
+li>a{
+color: black;
+margin-right: 35px;
+margin-right: 8px; 
+}
+i{
+    margin-top: 4px;
+    overflow: hidden;
+ }
+
 a{
     text-decoration: none;
 }
@@ -38,14 +60,15 @@ body{
     font-family: Instrument Sans, sans-serif;
 }
 .nav-menu li :hover{
-    color:  #FABC3F;
+    color:  blue;
     transition: all ease 0.2s;
+}
+i:hover{
+    color: blue;
 }
 header {
    
     overflow: hidden;
-
-
 }
 .hero{
     position: relative;
@@ -57,8 +80,6 @@ header {
     margin-right: -20px;
     margin-top: -5px;
 }
-
-
 
 .hero-image {
     position: absolute;
@@ -88,6 +109,7 @@ header {
 h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    border: 3px solid #FABC3F;
 }
 
 p {
@@ -107,7 +129,7 @@ p {
 }
 
 .hero-button:hover {
-    background-color: #e5a82e;
+    background-color: #b9b9a7;
 }
 .destinations{
     font-size: 2.4rem;
@@ -118,8 +140,11 @@ p {
 }
 .destination-grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 10px;
+    border: 3px solid #1d1c1a;
+    
+
 }
 .destination-item img{
     width: 100%;
@@ -135,8 +160,6 @@ p {
     right: 0;
     bottom: 0;
     z-index: 1;
-    background-color: rgba(28, 26, 26, 0.3); 
-   
 }
 body::-webkit-scrollbar {
     width: 0.5rem;
@@ -149,3 +172,4 @@ body::-webkit-scrollbar {
   body::-webkit-scrollbar-thumb {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   }
+  
