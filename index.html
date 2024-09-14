@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,55 +8,64 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css">
+</head>
 <body>
-
-        <header>
-            <div class="log">
-          <a href="#"><img src="logo.jpg" alt="logo"></a>
-            </div>
-            <nav class="nav-menu">
-        <ul>
-            <li class="HOME"><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">DESTINATION</a></li>
-            <li><a href="#">CONTACT</a></li>
-            <li><a href="#"><i class="fas fa-search"></i> SEARCH</a></li>
-            <li> <a href="#"><i class="fas fa-save"></i>SAVES</a></li>
-        </ul>          
-            </nav>
-        </header>
+    <header>
+        <div class="log">
+            <a href="#"><img src="logo.jpg" alt="logo"></a>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li class="HOME"><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">DESTINATION</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a class="icon" href="#"><i class="fas fa-save"></i>SAVES</a></li>
+                <li>
+                    <i id="lens" class="fas fa-search"></i>
+                    <div class="search-box">
+                        <div class="row">
+                            <input type="text" id="input-box" placeholder="Search anything" autocomplete="off">      
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section class="hero">
             <div class="hero-image">
                 <img src="UDUPI.jpg" alt="hero-image"/>
             </div>
-                <div class="hero-content">
-                    <h1>Welcome to our Travel Website</h1>
-                 <a href="#"  class="hero-button">Book Now</a>
+            <div class="hero-content">
+                <h1>Welcome to our Travel Website</h1>
+                <a href="#" class="hero-button">Book Now</a>
             </div>
         </section>
-        <!--Destinations-->
-        <section destinations>
+
+        <section id="destinations">
             <h2><center>Popular Destinations</center></h2>
             <div class="destination-grid">
-                <div class="destination-item">
-                    <img src="Chaturmukha-Basadi.jpg" alt=""/>
+                <div id="chaturmukha-basadi" class="destination-item">
+                    <img src="Chaturmukha-Basadi.jpg" alt="Chaturmukha Basadi"/>
                     <h3>Chaturmukha Basadi</h3>
-                    <p>Visit this place to discover its iconic landmarks <br>
-                    diverse tradition</p>
+                    <p>Visit this place to discover its iconic landmarks and diverse traditions</p>
                 </div>
-            <div class="destination-item">
-                <img src="St.-Lawrence-Church.jpg" alt=""/>
-                <h3>Church</h3>
-                <p>Place you must visit to see its true beauty</p>
+                <div id="st-lawrence-church" class="destination-item">
+                    <img src="St.-Lawrence-Church.jpg" alt="St. Lawrence Church"/>
+                    <h3>St. Lawrence Church</h3>
+                    <p>Place you must visit to see its true beauty</p>
+                </div>
+                <div id="beach" class="destination-item">
+                    <img src="beach.jpg" alt="Beach"/>
+                    <h3>Beach</h3>
+                    <p>Visit this place to discover the Tinten Adventure Resort</p>
+                </div>
             </div>
-        <div class="destination-item">
-            <img src="beach.jpg" alt=""/>
-            <h3>Beach</h3>
-            <p>Visit this place to discover the Tinten Adventure Resort</p>
-        </div>
-    </div>
-  </section>
-</main>
+        </section>
+    </main>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
