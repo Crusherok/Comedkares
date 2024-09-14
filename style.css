@@ -12,7 +12,7 @@ header{
     display: flex;
 }
 .log img{
-    max-width: 30%;
+    max-width: 35%;
     background-color: rgba(74, 44, 44, 0.3); 
 }
 .nav-menu ul{
