@@ -237,7 +237,51 @@ document.addEventListener('DOMContentLoaded', function() {
                 searchInput.value = items[currentSelectionIndex].textContent;
                 suggestionsContainer.innerHTML = '';
                 suggestionsContainer.style.display = 'none';
+                searchAndNavigate(searchInput.value);
             }
         }
+    });
+
+    // Function to perform search and navigation
+    function searchAndNavigate(query) {
+        query = query.toLowerCase();
+        const destinations = {
+            'chaturmukha basadi': 'chaturmukha-basadi.html',
+            'chaturmukha':'chaturmukha-basadi.html',
+            'st lawrence church': 'st-lawrence-church.html',
+            'church': 'st-lawrence-church.html',
+            'kudlu falls': 'kudlu-falls.html',
+            'falls': 'kudlu-falls.html',
+            'shri krishna temple udupi':'Shri-Krishna-Temple-Udupi.html',
+            'shri krishna temple': 'Shri-Krishna-Temple-Udupi.html',
+            'malpe sea walk': 'Malpe-Sea-Walk.html',
+            'kapu beach and lighthouse':'Kapu-Beach-and-Lighthouse.html',
+            'coin museum corpbank':'Coin-Museum-CorpBank.html',
+            'coin museum':'Coin-Museum-CorpBank.html',
+            'kollur sri mookambika temple':'Kollur-Sri-Mookambika-Temple.html',
+            'clifside waterfall':'Clifside-Waterfall.html'
+        };
+
+        const destinationPage = destinations[query];
+        if (destinationPage) {
+            window.location.href = destinationPage;
+        } else {
+            alert('Destination not found. Please try another search term.');
+        }
+    }
+
+    // Event listener for the search input
+    document.getElementById('search-input').addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            let searchQuery = this.value;
+            searchAndNavigate(searchQuery);
+        }
+    });
+
+    // Event listener for the search button
+    document.getElementById('search-button').addEventListener('click', function() {
+        let searchQuery = document.getElementById('search-input').value;
+        searchAndNavigate(searchQuery);
     });
 });
